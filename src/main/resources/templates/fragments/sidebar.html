@@ -1,0 +1,46 @@
+<aside th:fragment="sidebar"
+       class="admin-sidebar"
+       xmlns:th="http://www.thymeleaf.org">
+
+    <div class="sidebar-brand">
+        <img th:src="@{/img/logo.png}" alt="NWT">
+        <div>
+            <h2>NWT</h2>
+            <span>ADMINISTRATION</span>
+        </div>
+    </div>
+
+    <nav class="sidebar-menu">
+
+        <p class="sidebar-heading">MENU PRINCIPAL</p>
+
+        <a th:href="@{/admin}" class="sidebar-link">
+            ▦ Tableau de bord
+        </a>
+
+        <a th:href="@{/admin/utilisateurs}" class="sidebar-link">
+            ♙ Utilisateurs
+        </a>
+
+        <a th:href="@{/admin/statistiques}" class="sidebar-link">
+            ▥ Statistiques
+        </a>
+
+        <p class="sidebar-heading">CONFIGURATION</p>
+
+        <a th:href="@{/admin/parametres}" class="sidebar-link">
+            ⚙ Paramètres
+        </a>
+
+        <a th:href="@{/}" class="sidebar-link">
+            ⌂ Retour au site
+        </a>
+
+    </nav>
+
+    <div class="sidebar-bottom">
+        <strong>Administrateur</strong>
+        <small>Administration NWT</small>
+    </div>
+
+</aside>

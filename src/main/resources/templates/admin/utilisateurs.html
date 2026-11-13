@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr"
+      xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{base :: layout(~{::title}, ~{::section})}">
+
+<head>
+    <title>Utilisateurs | NWT</title>
+</head>
+
+<body>
+
+<section class="admin-layout">
+
+    <div th:replace="~{fragments/sidebar :: sidebar}"></div>
+
+    <main class="admin-content">
+
+        <header class="admin-topbar">
+            <span class="section-label">ADMINISTRATION</span>
+            <h1>Utilisateurs</h1>
+            <p>Gestion des comptes de la plateforme.</p>
+        </header>
+
+        <div class="content-card">
+
+            <h2>Liste des utilisateurs</h2>
+
+            <div class="table-responsive">
+
+                <table class="admin-table">
+
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nom</th>
+                        <th>Email</th>
+                        <th>Rôle</th>
+                        <th>Statut</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+
+                    <tr>
+                        <td>001</td>
+                        <td>Jean Dupont</td>
+                        <td>jean@example.com</td>
+                        <td>Utilisateur</td>
+                        <td>Actif</td>
+                    </tr>
+
+                    <tr>
+                        <td>002</td>
+                        <td>Marie Laurent</td>
+                        <td>marie@example.com</td>
+                        <td>Utilisateur</td>
+                        <td>Actif</td>
+                    </tr>
+
+                    <tr>
+                        <td>003</td>
+                        <td>Admin NWT</td>
+                        <td>admin@example.com</td>
+                        <td>Administrateur</td>
+                        <td>Actif</td>
+                    </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <p class="table-note">Données fictives de démonstration.</p>
+
+        </div>
+
+    </main>
+
+</section>
+
+</body>
+</html>

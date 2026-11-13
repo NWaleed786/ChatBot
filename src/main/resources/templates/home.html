@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr"
+      xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{base :: layout(~{::title}, ~{::section})}">
+
+<head>
+    <title>Accueil | NWT Chatbot</title>
+</head>
+
+<body>
+
+<section class="home-page">
+
+    <div class="hero">
+
+        <span class="hero-label">L'INTELLIGENCE ARTIFICIELLE AUTREMENT</span>
+
+        <h1>
+            Découvrez une nouvelle façon
+            <span>de communiquer avec l'IA.</span>
+        </h1>
+
+        <p>
+            Bienvenue sur NWT, votre espace intelligent
+            pour échanger, découvrir et créer.
+        </p>
+
+        <div class="hero-buttons">
+            <a th:href="@{/login}" class="primary-button">
+                Commencer gratuitement
+            </a>
+
+            <a href="#about" class="secondary-button">
+                Découvrir NWT
+            </a>
+        </div>
+
+    </div>
+
+    <div class="home-features" id="about">
+
+        <div class="feature-card">
+            <span>✦</span>
+            <h2>Intelligence</h2>
+            <p>Une expérience conversationnelle moderne.</p>
+        </div>
+
+        <div class="feature-card">
+            <span>◈</span>
+            <h2>Simplicité</h2>
+            <p>Une interface claire et intuitive.</p>
+        </div>
+
+        <div class="feature-card">
+            <span>⚡</span>
+            <h2>Rapidité</h2>
+            <p>Accédez facilement à vos conversations.</p>
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>

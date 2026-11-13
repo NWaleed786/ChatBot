@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="fr" xmlns:th="http://www.thymeleaf.org" th:replace="~{base :: layout(~{::title}, ~{::section})}">
+
+<head> <title>Modèle de page - NWT</title> </head>
+
+<body>
+
+<section class="page-container">
+
+    <div class="page-heading">
+
+        <div>
+            <span class="section-label">NWT APPLICATION</span>
+            <h1>Titre de votre page</h1>
+            <p>Ajoutez ici une description de votre page.</p>
+        </div>
+
+        <a th:href="@{/}" class="btn-purple">
+            Retour à l'accueil
+        </a>
+
+    </div>
+
+    <div class="content-card">
+
+        <h2>Contenu de la page</h2>
+
+        <p>
+            Vous pouvez ajouter ici vos tableaux,
+            formulaires, informations et fonctionnalités.
+        </p>
+
+    </div>
+
+
+</section>
+
+</body> </html>

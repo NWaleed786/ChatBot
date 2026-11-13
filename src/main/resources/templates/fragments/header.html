@@ -1,0 +1,14 @@
+<header th:fragment="header" class="main-header"
+        xmlns:th="http://www.thymeleaf.org">
+
+    <a th:href="@{/}" class="brand">
+        <img th:src="@{/img/logo.png}" alt="Logo NWT">
+        <span>NWT</span>
+    </a>
+
+    <nav class="main-nav">
+        <a th:href="@{/}">Accueil</a>
+        <a th:href="@{/login}" class="nav-button">Connexion</a>
+    </nav>
+
+</header>

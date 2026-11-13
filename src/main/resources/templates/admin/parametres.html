@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr"
+      xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{base :: layout(~{::title}, ~{::section})}">
+
+<head>
+    <title>Paramètres | NWT</title>
+</head>
+
+<body>
+
+<section class="admin-layout">
+
+    <div th:replace="~{fragments/sidebar :: sidebar}"></div>
+
+    <main class="admin-content">
+
+        <header class="admin-topbar">
+            <span class="section-label">CONFIGURATION</span>
+            <h1>Paramètres</h1>
+            <p>Configuration générale de NWT.</p>
+        </header>
+
+        <div class="content-card">
+
+            <h2>Informations générales</h2>
+
+            <form>
+
+                <div class="form-group">
+                    <label for="name">Nom de l'application</label>
+                    <input type="text" id="name" value="NWT Chatbot">
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea id="description" rows="4">Plateforme intelligente de conversations avec l'intelligence artificielle.</textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email administrateur</label>
+                    <input type="email" id="email" placeholder="admin@example.com">
+                </div>
+
+                <button type="button" class="primary-button">
+                    Enregistrer
+                </button>
+
+            </form>
+
+            <p class="table-note">Maquette : les modifications ne sont pas enregistrées.</p>
+
+        </div>
+
+    </main>
+
+</section>
+
+</body>
+</html>

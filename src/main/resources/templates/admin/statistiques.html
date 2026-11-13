@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr"
+      xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{base :: layout(~{::title}, ~{::section})}">
+
+<head>
+    <title>Statistiques | NWT</title>
+</head>
+
+<body>
+
+<section class="admin-layout">
+
+    <div th:replace="~{fragments/sidebar :: sidebar}"></div>
+
+    <main class="admin-content">
+
+        <header class="admin-topbar">
+            <span class="section-label">ANALYSE</span>
+            <h1>Statistiques</h1>
+            <p>Vue générale de l'activité NWT.</p>
+        </header>
+
+        <div class="stats-grid">
+
+            <div class="stat-card">
+                <span>Utilisateurs</span>
+                <h3>125</h3>
+            </div>
+
+            <div class="stat-card">
+                <span>Conversations</span>
+                <h3>348</h3>
+            </div>
+
+            <div class="stat-card">
+                <span>Modèles IA</span>
+                <h3>4</h3>
+            </div>
+
+        </div>
+
+        <div class="content-card">
+            <h2>Activité de la plateforme</h2>
+
+            <div class="chart-placeholder">
+                <div class="chart-bar" style="height: 35%"></div>
+                <div class="chart-bar" style="height: 60%"></div>
+                <div class="chart-bar" style="height: 45%"></div>
+                <div class="chart-bar" style="height: 85%"></div>
+                <div class="chart-bar" style="height: 70%"></div>
+                <div class="chart-bar" style="height: 95%"></div>
+                <div class="chart-bar" style="height: 55%"></div>
+            </div>
+
+            <p class="table-note">Graphique fictif de démonstration.</p>
+        </div>
+
+    </main>
+
+</section>
+
+</body>
+</html>

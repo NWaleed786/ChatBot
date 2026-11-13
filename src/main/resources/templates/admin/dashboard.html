@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr"
+      xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{base :: layout(~{::title}, ~{::section})}">
+
+<head>
+    <title>Dashboard | NWT</title>
+</head>
+
+<body>
+
+<section class="admin-layout">
+
+    <div th:replace="~{fragments/sidebar :: sidebar}"></div>
+
+    <main class="admin-content">
+
+        <header class="admin-topbar">
+            <span class="section-label">ESPACE ADMINISTRATEUR</span>
+            <h1>Tableau de bord</h1>
+            <p>Bienvenue dans votre espace de gestion NWT.</p>
+        </header>
+
+        <div class="admin-welcome">
+            <h2>Bienvenue sur NWT !</h2>
+            <p>Gérez votre plateforme depuis votre espace administrateur.</p>
+            <a th:href="@{/admin/utilisateurs}" class="primary-button">
+                Gérer les utilisateurs
+            </a>
+        </div>
+
+        <h2>Vue générale</h2>
+
+        <div class="stats-grid">
+
+            <div class="stat-card">
+                <span>Utilisateurs</span>
+                <h3>125</h3>
+                <p>Comptes enregistrés</p>
+            </div>
+
+            <div class="stat-card">
+                <span>Conversations</span>
+                <h3>348</h3>
+                <p>Conversations créées</p>
+            </div>
+
+            <div class="stat-card">
+                <span>Modèles IA</span>
+                <h3>4</h3>
+                <p>Modèles disponibles</p>
+            </div>
+
+            <div class="stat-card">
+                <span>Disponibilité</span>
+                <h3>100 %</h3>
+                <p>Indicateur fictif</p>
+            </div>
+
+        </div>
+
+    </main>
+
+</section>
+
+</body>
+</html>
